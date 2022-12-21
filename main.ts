@@ -1,7 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-    我出拳 = 1
-    basic.showIcon(IconNames.Scissors)
-    radio.sendNumber(1)
+    if (我出拳 == 0) {
+        我出拳 = 1
+        basic.showIcon(IconNames.Scissors)
+        radio.sendNumber(我出拳)
+    }
 })
 function 設定出值 () {
     basic.showArrow(ArrowNames.North)
@@ -9,20 +11,18 @@ function 設定出值 () {
     你出拳 = 0
 }
 input.onButtonPressed(Button.AB, function () {
-    我出拳 = 3
-    basic.showIcon(IconNames.Square)
-    radio.sendNumber(1)
+    if (我出拳 == 0) {
+        我出拳 = 3
+        basic.showIcon(IconNames.Square)
+        radio.sendNumber(我出拳)
+    }
 })
 input.onButtonPressed(Button.B, function () {
-    我出拳 = 2
-    basic.showLeds(`
-        . . . . .
-        . # # # .
-        . # # # .
-        . # # # .
-        . . . . .
-        `)
-    radio.sendNumber(1)
+    if (我出拳 == 0) {
+        我出拳 = 2
+        basic.showIcon(IconNames.SmallDiamond)
+        radio.sendNumber(我出拳)
+    }
 })
 let 你出拳 = 0
 let 我出拳 = 0
