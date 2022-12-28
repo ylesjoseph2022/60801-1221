@@ -1,5 +1,8 @@
 radio.onReceivedNumber(function (receivedNumber) {
     你出拳 = receivedNumber
+    while (我出拳 == 0) {
+        basic.showString("Hello!")
+    }
 })
 input.onButtonPressed(Button.A, function () {
     if (我出拳 == 0) {
