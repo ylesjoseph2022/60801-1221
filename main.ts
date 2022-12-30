@@ -37,11 +37,11 @@ input.onButtonPressed(Button.B, function () {
 function 判段輸贏 () {
     if (我出拳 == 你出拳) {
         basic.showIcon(IconNames.Pitchfork)
-    } else if (我出拳 == "1" && 你出拳 == "3") {
+    } else if (我出拳 == 1 && 你出拳 == 3) {
         basic.showIcon(IconNames.Happy)
-    } else if (我出拳 == "2" && 你出拳 == "1") {
+    } else if (我出拳 == 2 && 你出拳 == 1) {
         basic.showIcon(IconNames.Happy)
-    } else if (我出拳 == "3" && 你出拳 == "2") {
+    } else if (我出拳 == 3 && 你出拳 == 2) {
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
